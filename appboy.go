@@ -7,17 +7,16 @@ type AppboyRecord struct {
 }
 
 type AppboyPushToken struct {
-	App                  string `json:"app"`
-	Platform             string `json:"platform"`
-	Token                string `json:"token"`
-	NotificationsEnabled bool   `json:"notifications_enabled"`
+	App      string `json:"app"`
+	Platform string `json:"platform"`
+	Token    string `json:"token"`
 }
 
 type AppboyDevices struct {
 	Model   string `json:"model"`
 	OS      string `json:"os"`
 	Carrier string `json:"carrier"`
-	IDFV    string `json:"idfv"`
+	IDFV    string `json:"device_id"`
 }
 
 type AppboyApps struct {
